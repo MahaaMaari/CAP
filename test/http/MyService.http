@@ -1,0 +1,241 @@
+@server = http://localhost:4004
+@auth = Authorization: Basic no_user_found_for_roles_authenticated-user:
+
+
+### Emp
+# @name Emp_GET
+GET {{server}}/odata/v4/my/Emp
+{{auth}}
+
+
+### Emp
+# @name Emp_POST
+POST {{server}}/odata/v4/my/Emp
+Content-Type: application/json
+{{auth}}
+
+{
+  "NodeID": "12229009-7353-41e4-84ba-9a3cde9dfd2d",
+  "lastName": "lastName-12229009",
+  "firstName": "firstName-12229009",
+  "status": {
+    "code": "62"
+  },
+  "startDate": "2001-11-07",
+  "endDate": "2016-05-07",
+  "to_Address": [
+    {
+      "ID": "26339496-bfe8-48a8-a24f-714a465c5233",
+      "line1": "line1-26339496",
+      "line2": "line2-26339496",
+      "state": "state-26339496",
+      "country": {
+        "code": "805"
+      },
+      "pincode": "e-26339496",
+      "createdAt": "2000-06-19T18:30:00.000Z",
+      "createdBy": "createdBy.fojoo@example.com",
+      "modifiedAt": "2006-01-11T18:30:00.000Z",
+      "modifiedBy": "modifiedBy.fojoo@example.org"
+    }
+  ],
+  "to_Bank": [
+    {
+      "ID": "21515449-3e55-4263-9460-f3c5c05914a2",
+      "bankName": "bankName-21515449",
+      "bankAcc": 78,
+      "createdAt": "2013-02-03T18:30:00.000Z",
+      "createdBy": "createdBy.ct5fd@example.com",
+      "modifiedAt": "2021-12-24T18:30:00.000Z",
+      "modifiedBy": "modifiedBy.ct5fd@example.com"
+    },
+    {
+      "ID": "21515450-1f97-4e87-b21b-fac3716e3dcb",
+      "bankName": "bankName-21515450",
+      "bankAcc": 44,
+      "createdAt": "2006-04-02T18:30:00.000Z",
+      "createdBy": "createdBy.ct5fe@example.com",
+      "modifiedAt": "2000-01-21T18:30:00.000Z",
+      "modifiedBy": "modifiedBy.ct5fe@example.com"
+    }
+  ],
+  "ID": "D-12229009"
+}
+
+
+### Emp
+# @name Emp_PATCH
+PATCH {{server}}/odata/v4/my/Emp/12229009-7353-41e4-84ba-9a3cde9dfd2d
+Content-Type: application/json
+{{auth}}
+
+{
+  "NodeID": "12229009-7353-41e4-84ba-9a3cde9dfd2d",
+  "lastName": "lastName-12229009",
+  "firstName": "firstName-12229009",
+  "status": {
+    "code": "62"
+  },
+  "startDate": "2001-11-07",
+  "endDate": "2016-05-07",
+  "to_Address": [
+    {
+      "ID": "26339496-bfe8-48a8-a24f-714a465c5233",
+      "line1": "line1-26339496",
+      "line2": "line2-26339496",
+      "state": "state-26339496",
+      "country": {
+        "code": "805"
+      },
+      "pincode": "e-26339496",
+      "createdAt": "2000-06-19T18:30:00.000Z",
+      "createdBy": "createdBy.fojoo@example.com",
+      "modifiedAt": "2006-01-11T18:30:00.000Z",
+      "modifiedBy": "modifiedBy.fojoo@example.org"
+    }
+  ],
+  "to_Bank": [
+    {
+      "ID": "21515449-3e55-4263-9460-f3c5c05914a2",
+      "bankName": "bankName-21515449",
+      "bankAcc": 78,
+      "createdAt": "2013-02-03T18:30:00.000Z",
+      "createdBy": "createdBy.ct5fd@example.com",
+      "modifiedAt": "2021-12-24T18:30:00.000Z",
+      "modifiedBy": "modifiedBy.ct5fd@example.com"
+    },
+    {
+      "ID": "21515450-1f97-4e87-b21b-fac3716e3dcb",
+      "bankName": "bankName-21515450",
+      "bankAcc": 44,
+      "createdAt": "2006-04-02T18:30:00.000Z",
+      "createdBy": "createdBy.ct5fe@example.com",
+      "modifiedAt": "2000-01-21T18:30:00.000Z",
+      "modifiedBy": "modifiedBy.ct5fe@example.com"
+    }
+  ],
+  "ID": "D-12229009"
+}
+
+
+### Emp
+# @name Emp_DELETE
+DELETE {{server}}/odata/v4/my/Emp/12229009-7353-41e4-84ba-9a3cde9dfd2d
+Content-Type: application/json
+{{auth}}
+
+
+### Status
+# @name Status_GET
+GET {{server}}/odata/v4/my/Status
+{{auth}}
+
+
+### Address
+# @name Address_GET
+GET {{server}}/odata/v4/my/Address
+{{auth}}
+
+
+### Address
+# @name Address_POST
+POST {{server}}/odata/v4/my/Address
+Content-Type: application/json
+{{auth}}
+
+{
+  "ID": "26339496-bfe8-48a8-a24f-714a465c5233",
+  "line1": "line1-26339496",
+  "line2": "line2-26339496",
+  "state": "state-26339496",
+  "country": {
+    "code": "805"
+  },
+  "pincode": "e-26339496",
+  "createdAt": "2000-06-19T18:30:00.000Z",
+  "createdBy": "createdBy.fojoo@example.com",
+  "modifiedAt": "2006-01-11T18:30:00.000Z",
+  "modifiedBy": "modifiedBy.fojoo@example.org"
+}
+
+
+### Address
+# @name Address_PATCH
+PATCH {{server}}/odata/v4/my/Address/26339496-bfe8-48a8-a24f-714a465c5233
+Content-Type: application/json
+{{auth}}
+
+{
+  "ID": "26339496-bfe8-48a8-a24f-714a465c5233",
+  "line1": "line1-26339496",
+  "line2": "line2-26339496",
+  "state": "state-26339496",
+  "country": {
+    "code": "805"
+  },
+  "pincode": "e-26339496",
+  "createdAt": "2000-06-19T18:30:00.000Z",
+  "createdBy": "createdBy.fojoo@example.com",
+  "modifiedAt": "2006-01-11T18:30:00.000Z",
+  "modifiedBy": "modifiedBy.fojoo@example.org"
+}
+
+
+### Address
+# @name Address_DELETE
+DELETE {{server}}/odata/v4/my/Address/26339496-bfe8-48a8-a24f-714a465c5233
+Content-Type: application/json
+{{auth}}
+
+
+### Bank
+# @name Bank_GET
+GET {{server}}/odata/v4/my/Bank
+{{auth}}
+
+
+### Bank
+# @name Bank_POST
+POST {{server}}/odata/v4/my/Bank
+Content-Type: application/json
+{{auth}}
+
+{
+  "ID": "21515449-3e55-4263-9460-f3c5c05914a2",
+  "bankName": "bankName-21515449",
+  "bankAcc": 78,
+  "createdAt": "2013-02-03T18:30:00.000Z",
+  "createdBy": "createdBy.ct5fd@example.com",
+  "modifiedAt": "2021-12-24T18:30:00.000Z",
+  "modifiedBy": "modifiedBy.ct5fd@example.com"
+}
+
+
+### Bank
+# @name Bank_PATCH
+PATCH {{server}}/odata/v4/my/Bank/21515449-3e55-4263-9460-f3c5c05914a2
+Content-Type: application/json
+{{auth}}
+
+{
+  "ID": "21515449-3e55-4263-9460-f3c5c05914a2",
+  "bankName": "bankName-21515449",
+  "bankAcc": 78,
+  "createdAt": "2013-02-03T18:30:00.000Z",
+  "createdBy": "createdBy.ct5fd@example.com",
+  "modifiedAt": "2021-12-24T18:30:00.000Z",
+  "modifiedBy": "modifiedBy.ct5fd@example.com"
+}
+
+
+### Bank
+# @name Bank_DELETE
+DELETE {{server}}/odata/v4/my/Bank/21515449-3e55-4263-9460-f3c5c05914a2
+Content-Type: application/json
+{{auth}}
+
+
+### Countries
+# @name Countries_GET
+GET {{server}}/odata/v4/my/Countries
+{{auth}}
