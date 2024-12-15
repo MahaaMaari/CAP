@@ -4,7 +4,7 @@ annotate Employee with @(
         LineItem  : [
             {
                 $Type : 'UI.DataField',
-                Value : ID
+                Value : ID,
             },
             {
                 $Type : 'UI.DataField',
@@ -27,7 +27,22 @@ annotate Employee with @(
                 Value : endDate,
             },
         ],
+        Identification  : [
+            {
+                $Type : 'UI.DataField',
+                Value : ID,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : firstName,
+            },
+            {
+                $Type : 'UI.DataField',
+                Value : lastName,
+            },
+        ],
     },
+    odata.draft.enabled:true,
 );
 annotate Employee{
     ID @(
@@ -66,5 +81,6 @@ annotate Employee{
             Label : 'Bank',
         }
     );
+    modifiedAt @odata.etag;
 };
 
