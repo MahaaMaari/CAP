@@ -7,6 +7,11 @@ annotate Employee with @(
                 Value : ID,
                 Label:'ID'
             },
+            {
+                $Type : 'UI.DataField',
+                Value : firstName,
+                Label:'First Name'
+            },
         ],
     }
 );
